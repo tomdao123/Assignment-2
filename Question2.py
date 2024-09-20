@@ -47,21 +47,20 @@ letters = ""
 ASCII_number = []
 ASCII_letter = []
 
-# split characters and numbers
 for char in s:
     if char.isalpha():
         letters += char
     else:
         numbers += char
 
-# ASCII values of the uppercase letters
+
 for char in letters:
-    if char.isupper(): # only appending uppercase letters
+    if char.isupper(): 
         ASCII_letter.append(ord(char))
 
-#ASCII values of the even numbers
+
 for char in numbers:
-    if int(char) % 2 == 0: # only appening even numbers
+    if int(char) % 2 == 0: 
         ASCII_number.append(ord(char))
 print("ASCII values of uppercase letters:", ASCII_letter)
 print("ASCII values of even digits:", ASCII_number)
